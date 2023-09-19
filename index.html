@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS3 Animation</title>
+        <style>
+            a{
+                text-decoration: none;
+            }
+            body{
+            background: pink;
+            }
+       .c{
+     width:100px;
+     height:100px;
+     background: red;
+     margin:100px auto;
+     animation-name: abc;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+     animation-iteration-count:infinite;
+}
+@keyframes abc{
+    0%{transform: rotateZ(0deg);
+
+    }
+    100%{
+
+        transform: rotateZ(360deg);
+    }
+}
+
+.cc{
+     width:200px;
+     height:200px;
+     background:black;
+     margin:100px;
+     animation-name: abcd;
+     animation-duration:5s;
+     animation-timing-function:lease-in;
+     animation-iteration-count:;
+     animation-direction: alternate;
+}
+@keyframes abcd{
+    0%{transform: translate(0px);
+
+    }
+    25%{background: red;
+    }
+    50%{background: yellow;}
+    75%{background: blue;}
+    100%{
+
+    transform: translate(800px);
+    }
+}
+
+
+
+
+
+ </style>
+    </head>
+    <body>
+<div class="c"></div>
+<div class="cc"></div>
+
+<a href="./index1.html">Go to my next page</a>
+ </body>
+</html>
